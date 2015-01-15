@@ -4387,9 +4387,8 @@ meta.foundation-mq-topbar {
   .top-bar .name {
     height: 45px;
     margin: 0;
-    font-size: 16px; 
-    width: 500px;
-    padding-left: -20px;}
+    font-size: 16px;
+    width: 500px;}
     .top-bar .name h1 {
       line-height: 45px;
       font-size: 1.0625rem;
@@ -5481,5 +5480,3 @@ th.hide-for-touch {
     display: table-cell !important; }
   th.show-for-print {
     display: table-cell !important; } }
-
-/*# sourceMappingURL=foundation.css.map */
