@@ -5480,3 +5480,19 @@ th.hide-for-touch {
     display: table-cell !important; }
   th.show-for-print {
     display: table-cell !important; } }
+    
+#featured {
+  width:80%;
+  margin:5px 10% 0 10%;
+}
+
+.feat-back {
+  background:grey;
+  padding:5px;
+  margin-top:5px;
+}
+
+.thumb .img {
+  width:10%
+  height:auto;
+}
