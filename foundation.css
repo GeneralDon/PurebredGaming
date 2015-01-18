@@ -5496,3 +5496,8 @@ th.hide-for-touch {
   width:10%
   height:auto;
 }
+
+.topbar-cont {
+  background: #333333;
+  width: 100%;
+}
