@@ -61,7 +61,7 @@ img {
   max-width: none !important; }
 
 .left {
-  float: left !important; }
+  float: right !important; }
 
 .right {
   float: right !important; }
@@ -4445,7 +4445,8 @@ meta.foundation-mq-topbar {
         box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888; }
 
 .top-bar-section {
-  left: 0;
+  padding-left: 100px;
+  right: 0;
   position: relative;
   width: auto;
   transition: left 300ms ease-out; }
