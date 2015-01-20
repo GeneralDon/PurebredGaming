@@ -61,7 +61,7 @@ img {
   max-width: none !important; }
 
 .left {
-  float: left !important; }
+  float: right !important; }
 
 .right {
   float: right !important; }
@@ -5495,4 +5495,28 @@ th.hide-for-touch {
 .thumb .img {
   width:10%
   height:auto;
+}
+
+.topbar-cont {
+  background: #333333;
+  width: 100%;
+}
+
+input[type=text] {
+  width:200px;
+  margin-bottom:-10px;
+  margin-left:5px;
+  height:30px;
+  border: 5px solid white;
+  -webkit-box-shadow:
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1);
+  -moz-box-shadow:
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1);
+  box-shadow:
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1);
+  padding: 15px;
+  background: rgba(255,255,255,0.5);
 }
