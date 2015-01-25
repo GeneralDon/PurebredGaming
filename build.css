@@ -5759,3 +5759,7 @@ body{background-color:white;color:black;font:normal 13px arial,sans-serif;margin
   width: 101%;
   margin-left: -9px;
 }
+
+.fees {
+  max-width: 100%;
+}
