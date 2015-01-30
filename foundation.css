@@ -5503,7 +5503,13 @@ th.hide-for-touch {
   width: 100%;
 }
 
-
+.content {
+  /*background:lightgrey;*/
+  width:90%;
+  height:200%;
+  /*margin:5%;*/
+  margin-top:2%;
+}
 
 #slider {
   position: relative;
@@ -5568,4 +5574,16 @@ a.control_prev {
 a.control_next {
   right: 0;
   border-radius: 2px 0 0 2px;
+}
+
+.fees {
+  max-width: 100%;
+}
+
+.content {
+  /*background:lightgrey;*/
+  width:90%;
+  height:200%;
+  /*margin:5%;*/
+  margin-top:2%;
 }
