@@ -5498,14 +5498,6 @@ th.hide-for-touch {
   height:auto;
 }
 
-.content {
-  /*background:lightgrey;*/
-  width:90%;
-  height:200%;
-  /*margin:5%;*/
-  margin-top:2%;
-}
-
 .iframe {
   margin-left:0;
 }
@@ -5816,6 +5808,16 @@ body{background-color:white;color:black;margin:0}h1,h2,h3,h4,h5{margin:0}.g{colo
   margin-left: -9px;
 }
 
+.content {
+  /*background:lightgrey;*/
+  width:70%;
+  height:100%;
+  margin-top:2%;
+  /*border: 2px solid black;*/
+  margin-left: 15%;
+}
+
 .fees {
   max-width: 100%;
+  /*border: 2px solid red;*/
 }

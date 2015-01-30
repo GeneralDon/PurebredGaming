@@ -5505,24 +5505,17 @@ th.hide-for-touch {
 
 .content {
   /*background:lightgrey;*/
-  width:90%;
-  height:200%;
-  /*margin:5%;*/
+  width:70%;
+  height:100%;
   margin-top:2%;
+  /*border: 2px solid black;*/
+  margin-left: 15%;
 }
 
 .fees {
   max-width: 100%;
+  /*border: 2px solid red;*/
 }
-
-.content {
-  /*background:lightgrey;*/
-  width:90%;
-  height:200%;
-  /*margin:5%;*/
-  margin-top:2%;
-}
-
 
 
 .ss-form-container, .ss-resp-card {
