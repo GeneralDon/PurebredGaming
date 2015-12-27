@@ -5587,16 +5587,7 @@ clear: left;
 }
 
 .ss-header-image-container {
-  height: auto;
-  text-align: center;
-}
-
-.ss-header-image-image {
-  background-image: url('//ssl.gstatic.com/docs/forms/themes/images/v1/bf3c171080e8d6fad16dc3af5863156c04d34f953b66b6e4f3b3b659cbaaaf62/21-explosions.jpg');
-}
-
-.ss-header-image-sizer {
-  padding-top: 25.000%;
+  height: 0;
 }
 
 .ss-item {
