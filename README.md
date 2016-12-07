@@ -1,2 +1,2 @@
 # PurebredGaming
-A service to help you choose and build desktop PCs.
+A manufacturing company which designs and builds unique desktop computers from premium hardwoods.
