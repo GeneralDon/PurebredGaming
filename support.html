@@ -1,151 +1,266 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	*** Modified for Purebred Gaming by Don Hahn ***
+-->
 <html>
-<head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="assets/css/support.css" />
-      <title>Support</title>
-      
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400|Raleway:400,700">
+	<head>
+		<title>Support - Purebred Gaming</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 
-
-<link href='https://docs.google.com/static/forms/client/css/2588955203-mobile_formview_st_ltr.css' type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
+		<!-- Chrome, Firefox OS and Opera -->
+			<meta name="theme-color" content="#FFFFFF">
+		<!-- Windows Phone -->
+			<meta name="msapplication-navbutton-color" content="#FFFFFF">
+		<!-- iOS Safari -->
+			<meta name="apple-mobile-web-app-capable" content="yes">
+			<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <script type="text/javascript">
           /**
  * @license
- *! H5F
- * https://github.com/ryanseddon/H5F/
- * Copyright (c) Ryan Seddon | Licensed MIT
+ *
+ * H5F 1.1.1
+ * See https://github.com/ryanseddon/H5F/ for details.
+ *
+ * Copyright (c) 2013 Ryan Seddon
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
  */
-
-(function(e,t){"function"==typeof define&&define.amd?define(t):e.H5F=t()})(this,function(){var e,t,a,i,n,r,s,l,u,o,c,d,v,f,p,m,h,g,b,y,w,C,N,A,E,$,k=document,x=k.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder"};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var l=0,u=e.length;u>l;l++)s(e[l]);else s(e)},s=function(a){var i,n=a.elements,r=n.length,s=!!a.attributes.novalidate;if(b(a,"invalid",u,!0),b(a,"blur",u,!0),b(a,"input",u,!0),b(a,"keyup",u,!0),b(a,"focus",u,!0),b(a,"change",u,!0),b(a,"click",o,!0),b(a,"submit",function(i){e=!0,t||s||a.checkValidity()||w(i)},!1),!v())for(a.checkValidity=function(){return c(a)};r--;)i=!!n[r].attributes.required,"fieldset"!==n[r].nodeName.toLowerCase()&&l(n[r])},l=function(e){var t=e,a=g(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,s=/^(input|keyup)$/i,l=r.test(n.type)?n.type:n.pattern?n.pattern:!1,u=f(t,l),o=m(t,"step"),v=m(t,"min"),h=m(t,"max"),b=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return c.call(this,t)},t.setCustomValidity=function(e){d.call(t,e)},t.validity={valueMissing:a,patternMismatch:u,rangeUnderflow:v,rangeOverflow:h,stepMismatch:o,customError:b,valid:!(a||u||o||v||h||b)},n.placeholder&&!s.test(i)&&p(t)},u=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,s=/^(checkbox|radio)$/i,o=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||l(t),t.validity.valid&&(""!==t.value||s.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&o&&(y(t.form,"keyup",u,!0),o=!1))},c=function(t){var a,i,n,r,s=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var l=0,o=a.length;o>l;l++)i=a[l],n=!!i.attributes.required,r=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&(n||r&&n)&&(u(i),i.validity.valid||s||(e&&i.focus(),s=!0));return!s}return u(t),t.validity.valid},d=function(e){var t=this;t.validationMessage=e},o=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(x,"validity")&&E(x,"checkValidity")},f=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},p=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,s=/^password$/i,l=!!("placeholder"in x);l||!r.test(e.nodeName)||s.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,b(e.form,"submit",function(){i="submit",p(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),s=(r-a)%n;return g(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==s:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},h=function(e){var t=!!e.attributes.required;return t?g(e):!1},g=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},b=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+(function(e,t){"function"==typeof define&&define.amd?define(t):"object"==typeof module&&module.exports?module.exports=t():e.H5F=t()})(this,function(){var e,t,a,i,n,r,l,s,o,u,d,c,v,p,f,m,b,h,g,y,w,C,N,A,E,$,x=document,k=x.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder",onSubmit:Function.prototype,onInvalid:Function.prototype};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var s=0,o=e.length;o>s;s++)l(e[s]);else l(e)},l=function(a){var i,r=a.elements,l=r.length,c=!!a.attributes.novalidate;if(g(a,"invalid",o,!0),g(a,"blur",o,!0),g(a,"input",o,!0),g(a,"keyup",o,!0),g(a,"focus",o,!0),g(a,"change",o,!0),g(a,"click",u,!0),g(a,"submit",function(i){return e=!0,t||c||a.checkValidity()?(n.onSubmit.call(a,i),void 0):(w(i),void 0)},!1),!v())for(a.checkValidity=function(){return d(a)};l--;)i=!!r[l].attributes.required,"fieldset"!==r[l].nodeName.toLowerCase()&&s(r[l])},s=function(e){var t=e,a=h(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,l=/^(input|keyup)$/i,s=r.test(n.type)?n.type:n.pattern?n.pattern:!1,o=p(t,s),u=m(t,"step"),v=m(t,"min"),b=m(t,"max"),g=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return d.call(this,t)},t.setCustomValidity=function(e){c.call(t,e)},t.validity={valueMissing:a,patternMismatch:o,rangeUnderflow:v,rangeOverflow:b,stepMismatch:u,customError:g,valid:!(a||o||u||v||b||g)},n.placeholder&&!l.test(i)&&f(t)},o=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,l=/^(checkbox|radio)$/i,u=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||s(t),t.validity.valid&&(""!==t.value||l.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&u&&(y(t.form,"keyup",o,!0),u=!1))},d=function(t){var a,i,r,l,s,u=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var d=0,c=a.length;c>d;d++)i=a[d],r=!!i.attributes.disabled,l=!!i.attributes.required,s=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&!r&&(l||s&&l)&&(o(i),i.validity.valid||u||(e&&i.focus(),u=!0,n.onInvalid.call(t,i)));return!u}return o(t),t.validity.valid},c=function(e){var t=this;t.validationMessage=e},u=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(k,"validity")&&E(k,"checkValidity")},p=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},f=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,l=/^password$/i,s=!!("placeholder"in k);s||!r.test(e.nodeName)||l.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,g(e.form,"submit",function(){i="submit",f(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),l=(r-a)%n;return h(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==l:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},b=function(e){var t=!!e.attributes.required;return t?h(e):!1},h=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},g=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
 
         </script>
-<link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/1KyXxrEVWT0WHJzaxfIcZAaxDeGM1HviUmyOJLXlELRo/oembed?url=https://docs.google.com/forms/d/1KyXxrEVWT0WHJzaxfIcZAaxDeGM1HviUmyOJLXlELRo/viewform&amp;format=xml">
-<meta property="og:title" content="Untitled form"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/1KyXxrEVWT0WHJzaxfIcZAaxDeGM1HviUmyOJLXlELRo/viewform"><meta property="og:image" content="https://lh6.googleusercontent.com/vtazymc0MbqwJXqWaLdYv12X_TgtaqOrY1t_cJEKHBzljDG885jvLv8BaLFLzznhmeA=w1200-h630-p"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="player"><meta name="twitter:title" content="Untitled form"><meta name="twitter:url" content="https://docs.google.com/forms/d/1KyXxrEVWT0WHJzaxfIcZAaxDeGM1HviUmyOJLXlELRo/viewform"><meta name="twitter:image" content="https://lh6.googleusercontent.com/vtazymc0MbqwJXqWaLdYv12X_TgtaqOrY1t_cJEKHBzljDG885jvLv8BaLFLzznhmeA=w435-h251-p-b1-c0x00999999"><meta name="twitter:player:width" content="435"><meta name="twitter:player:height" content="251"><meta name="twitter:player" content="https://docs.google.com/forms/d/1KyXxrEVWT0WHJzaxfIcZAaxDeGM1HviUmyOJLXlELRo/viewform?embedded=true"><meta name="twitter:description" content="Google Drive"><meta name="twitter:site" content="@googledrive">
+
+        <style type="text/css">.required-message,.error-message{color:#c43b1d;display:none;font-size:13px}.required~.required-message,.error~.error-message{display:block}</style>
+
 </head>
-<body>
-  <div class="topbar-cont">
-      <div class="row">
-        <div class="large-12 columns">
-       
-          <!-- Navigation -->
-            <nav class="top-bar" data-topbar>
-              <ul class="title-area">
-                <!-- Title Area -->
-                <li class="name">
-                  <h1>
-                    <a href="http://purebredgaming.com">
-                      <img src="http://i.imgur.com/MySlDTO.png" alt="Purebred Gaming" width:20px;>
-                    </a>
-                  </h1>
-                </li>
-                <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-              </ul>
-       
-              <section class="top-bar-section">
-                <ul class="left">
-                  <li><a href="/build">Build</a></li>
-                  <li><a href="/contact">Contact</a></li>
-                </ul>
-              </section>
-            </nav>
-       
-          <!-- End Navigation -->
-        
-          </div>
-        </div>
-      </div>
-      
-      <div class="content">
-        <div class="row">
-          <div class="fees">
-            <h4>Support</h4>
-            <p>Found a bug? Need help? You're in the right place! Please describe the problem with as much detail as possible and we will do our best to fix it and get back to you.</p><p>If the problem you're having is not website related, please choose the appropriate option in the form and let us know what we can help with. Again, we will get back to you as soon as possible.</p>
-          </div>
-        </div>
-      
-      <div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="Untitled form">
 
+<body class="contact">
+	<div id="page-wrapper">
 
-<meta itemprop="url" content="https://docs.google.com/forms/d/1KyXxrEVWT0WHJzaxfIcZAaxDeGM1HviUmyOJLXlELRo/viewform">
-<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/1KyXxrEVWT0WHJzaxfIcZAaxDeGM1HviUmyOJLXlELRo/viewform?embedded=true">
-<meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png">
+			<!-- Header -->
+				<header id="header" class="alt" style="background: white; color:#7c8081">
+					<h1 id="logoD" class="logo" style="background-position: 0 -56px;"><a href="index.html"><img src="logos/logo_trans.png" alt="Purebred Gaming"></a></h1>/**Change logo offset to em or something?*/
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="/index.html">Welcome</a></li>
+							<li class="submenu">
+								<a href="#">More Info</a>
+								<ul>
+									<li class="submenu">
+										<a href="/buy.html">Purchase</a>
+										<ul>
+											<li><a href="Bpages/po13.html">PO-13 (Office)</a></li>
+											<li><a href="Bpages/pg13.html">PG-13 (Gaming)</a></li>
+										</ul>
+									</li>
+									<li><a href="Bpages/build.html">Full PC Build</a></li>
+									<li><a href="about.html">About</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="support.html">Support</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="button special">Buy Now</a></li>
+						</ul>
+					</nav>
+				</header>
 
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon fa-envelope"></span>
+						<h2>Support</h2>
+						<p>If you have any hardware issue at all with our products, please do not hesitate to get in touch. <br>We'll get back to you as soon as possible!</p>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 special container 75%">
+
+							<!-- Content -->
+								<div class="content">
 
 
 
 
-<div class="ss-form-container"><div class="ss-header-image-container"><div class="ss-header-image-image"><div class="ss-header-image-sizer"></div></div></div>
-<div class="ss-top-of-page"></div>
-<div class="ss-form"><form action="https://docs.google.com/forms/d/1KyXxrEVWT0WHJzaxfIcZAaxDeGM1HviUmyOJLXlELRo/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
-<div class="ss-form-question errorbox-good" role="listitem">
-<div dir="ltr" class="ss-item  ss-paragraph-text"><div class="ss-form-entry">
-<label class="ss-q-item-label" for="entry_1064931681"><div class="ss-q-title">How can we help?
+
+
+<div class="ss-form-container">
+	<div class="ss-form">
+		<form action="https://docs.google.com/forms/d/1ZQIbRmJPolpZICy9jYqfmtHL8YiqrUhVC9EbXNq8CwE/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+			<ol role="list" class="ss-question-list" style="padding-left: 0;">
+				<div class="ss-form-question errorbox-good" role="listitem">
+					<div class="ss-form-entry">
+						<label class="ss-q-item-label" for="entry_343610371">
+							<div class="ss-q-title">Your Name
+								<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+							</div>
+						</label>
+						<input type="text" name="entry.343610371" value="" class="ss-q-short" id="entry_343610371" dir="auto" aria-label="Your Name  " aria-required="true" required="" title="">
+						<div class="error-message" id="313135358_errorMessage"></div>
+					</div>
+				</div>
+
+				<div class="ss-form-question errorbox-good" role="listitem">
+					<div dir="auto" class="ss-item ss-item-required ss-text">
+						<div class="ss-form-entry">
+							<label class="ss-q-item-label" for="entry_197767530">
+								<div class="ss-q-title">Your Email
+									<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+								</div>
+							</label>
+							<input type="email" name="entry.197767530" value="" class="ss-q-short" id="entry_197767530" dir="auto" aria-label="Your Email  Please enter a real email address" aria-required="true" required="" title="Please enter a real email address">
+							<div class="error-message" id="695579023_errorMessage">Please enter a real email address</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ss-form-question errorbox-good" role="listitem">
+					<div dir="auto" class="ss-item ss-item-required ss-paragraph-text">
+						<div class="ss-form-entry">
+							<label class="ss-q-item-label" for="entry_2113515022">
+								<div class="ss-q-title">What&#39;s the issue?
+									<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+								</div>
+							</label>
+							<textarea name="entry.2113515022" rows="8" cols="0" class="ss-q-long" id="entry_2113515022" dir="auto" aria-label="What&#39;s up?  Sorry, too many letters!" aria-required="true" required=""></textarea>
+							<div class="error-message" id="2103177809_errorMessage">Sorry, too many letters!</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ss-form-question errorbox-good" role="listitem">
+					<div dir="auto" class="ss-item ss-item-required ss-text">
+						<div class="ss-form-entry">
+							<label class="ss-q-item-label" for="entry_1117894054">
+								<div class="ss-q-title">Prove you are human: 5x3=?
+									<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+								</div>
+							</label>
+							<input type="number" name="entry.1117894054" value="" class="ss-q-short" id="entry_1117894054" dir="auto" aria-label="Prove you are human: 5x3=?  Go away, robot!" aria-required="true" required="" step="any" title="Go away, robot!">
+							<div class="error-message" id="1106986735_errorMessage">Go away, robot!</div>
+						</div>
+					</div>
+				</div>
+
+				<input type="hidden" name="draftResponse" value="[,,&quot;5465724598954593068&quot;]
+				">
+				<input type="hidden" name="pageHistory" value="0">
+
+
+
+				<input type="hidden" name="fbzx" value="5465724598954593068">
+
+				<div class="ss-item ss-navigate" style="padding-top:50px;">
+					<table id="navigation-table">
+						<tbody>
+							<tr>
+								<td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+									<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</ol>
+		</form>
+	</div>
 </div>
-<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-<textarea name="entry.1064931681" rows="8" cols="0" class="ss-q-long" id="entry_1064931681" dir="auto" aria-label="How can we help?  "></textarea>
-<div class="error-message" id="62386046_errorMessage"></div>
-<div class="required-message">This is a required question</div>
-</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
-<label class="ss-q-item-label" for="entry_104506975"><div class="ss-q-title">Your contact email
-</div>
-<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-<input type="email" name="entry.104506975" value="" class="ss-q-short" id="entry_104506975" dir="auto" aria-label="Your contact email  Please enter a valid email address." title="Please enter a valid email address.">
-<div class="error-message" id="1710962185_errorMessage">Please enter a valid email address.</div>
-<div class="required-message">This is a required question</div>
-</div></div></div>
-<input type="hidden" name="draftResponse" value="[,,&quot;-8044108588214832132&quot;]
-">
-<input type="hidden" name="pageHistory" value="0">
 
 
-<input type="hidden" name="fbzx" value="-8044108588214832132">
-
-<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
-</tr></tbody></table></div></ol></form></div>
-<div class="ss-footer"><div class="ss-attribution"></div>
-<div class="ss-legal"><div class="disclaimer-separator"></div>
-<div class="disclaimer" dir="ltr"><div class="powered-by-logo"><span class="powered-by-text">Powered by</span>
-<a href="https://www.google.com/forms/about/?utm_source=product&amp;utm_medium=forms_logo&amp;utm_campaign=forms"><div class="ss-logo-container ss-logo-css-container"><div class="ss-logo-image"></div>
-<span class="aria-only-help">Google Forms</span></div></a></div>
-<div class="ss-terms"><span class="disclaimer-msg">This content is neither created nor endorsed by Google.</span>
-<br>
-<a href="https://docs.google.com/forms/d/1KyXxrEVWT0WHJzaxfIcZAaxDeGM1HviUmyOJLXlELRo/reportabuse?source=https://docs.google.com/forms/d/1KyXxrEVWT0WHJzaxfIcZAaxDeGM1HviUmyOJLXlELRo/viewform">Report Abuse</a>
--
-<a href="http://www.google.com/accounts/TOS">Terms of Service</a>
--
-<a href="http://www.google.com/google-d-s/terms.html">Additional Terms</a></div></div></div></div>
-
-<script type='text/javascript' src='/static/forms/client/js/205881147-formviewer_prd.js'></script>
+<script type='text/javascript' src='/static/forms/client/js/2090925338-formviewer_prd.js'></script>
 <script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
           _initFormViewer(
-            "[100,,[[[104506975,[[2,102,,\x22Please enter a valid email address.\x22]\n]\n]\n]\n]\n]\n");</script></div>
-            
-      </div>
-       
-          <!-- Footer -->
-       
-        <footer class="row">
-          <div class="large-12 columns">
-            <hr>
-            <div class="row">
-              <div class="large-6 columns">
-                <p>© 2015 PurebredGaming.com</p>
-              </div>
-              <div class="large-6 columns">
-                <ul class="inline-list right">
-                  <li><a href="/build">Build</a></li>
-                  <li><a href="/contact">Contact</a></li>
-                  <li><a href="/support">Support</a></li>
-                  <li><a href="#">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
-</body>
+            "[100,,[[[197767530,[[2,102,,\x22Please enter a real email address\x22]\n]\n]\n,[2113515022,[[6,202,[\x221500\x22]\n,\x22Sorry, too many letters!\x22]\n]\n]\n,[1117894054,[[1,5,[\x2215\x22]\n,\x22Go away, robot!\x22]\n]\n]\n]\n]\n]\n");</script></div>
+
+
+									<!--<form>
+										<div class="row 50%">
+											<div class="6u 12u(mobile)">
+												<input for="Name" type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="6u 12u(mobile)">
+												<input for="Email" type="text" name="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row 50%">
+											<div class="12u">
+												<input for="Subject" type="text" name="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row 50%">
+											<div class="12u">
+												<textarea for="Message" name="message" placeholder="Message" rows="7"></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<ul class="buttons">
+													<li><input type="submit" name="submit" class="special" value="Send Message" /></li>
+												</ul>
+											</div>
+										</div>
+									</form> -->
+								</div>
+
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>Purebred Gaming &amp; Technology LLC</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
