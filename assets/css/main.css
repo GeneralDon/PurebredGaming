@@ -1682,7 +1682,7 @@
 		}
 
 		header.special h2 {
-			margin-bottom: 0;
+			/* margin-bottom: -5px; */
 		}
 
 		header.special h2 + p {
@@ -2732,7 +2732,7 @@
 
 			header.special {
 				margin-bottom: 4em;
-				padding-top: 5em;
+				padding-top: 1.5em;
 			}
 
 				header.special:before, header.special:after {
@@ -3055,7 +3055,7 @@
 				}
 
 					header.special:before, header.special:after {
-						width: 38%;
+						width: 30%;
 					}
 
 					header.special .icon {
