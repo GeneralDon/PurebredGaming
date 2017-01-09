@@ -233,6 +233,10 @@
 
 /* Grid */
 
+	#silver {
+		padding: 2em;
+	}
+
 	.row {
 		border-bottom: solid 1px transparent;
 		-moz-box-sizing: border-box;
@@ -491,6 +495,10 @@
 
 	@media screen and (max-width: 1680px) {
 
+		#silver {
+			padding: 2em;
+		}
+
 		.row > * {
 			padding: 40px 0 0 40px;
 		}
@@ -705,6 +713,10 @@
 	}
 
 	@media screen and (max-width: 1280px) {
+
+		#silver {
+			padding: 1em;
+		}
 
 		.row > * {
 			padding: 40px 0 0 40px;
@@ -1135,6 +1147,14 @@
 	}
 
 	@media screen and (max-width: 840px) {
+
+		#silver {
+			height: 30em;
+		}
+
+		#silver ul {
+			margin-top: 0;
+		}
 
 		.row > * {
 			padding: 30px 0 0 30px;
@@ -1665,12 +1685,14 @@
 	#silver {
 		transition: all 0.3s ease;
 		border: 2px silver solid; 
-		padding: 2em;
+		/*padding: 2em;*/
+		/*height: 37em;*/
 		height: 37em;
 	}
 
 	#silver:hover {
 		transition: all 0.3s ease;
+		transition: color 0.1s ease;
 
 		background-color: #83d3c9;
 		color: white;
@@ -1678,6 +1700,11 @@
 
 	#silver ul {
 
+	}
+
+	#silver a {
+		transition: all 0.1s ease;
+		color: inherit;
 	}
 
 	#silvbuy {
@@ -2784,10 +2811,12 @@
 
 			section {
 				margin: 1em 0 1em 0;
+
 			}
 
 				section:first-child {
 					margin-top: 0;
+					padding: 5em;
 				}
 
 		/* Button */
@@ -3049,6 +3078,10 @@
 				transform: translateX(0);
 			}
 
+			#silver {
+				height: 26em;
+			}
+
 	}
 
 /* Mobile */
@@ -3246,6 +3279,10 @@
 				left: 8px;
 				width: 50px;
 				height: 34px;
+			}
+
+			#silver {
+				height: 31em;
 			}
 
 	}
