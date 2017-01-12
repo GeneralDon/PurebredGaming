@@ -1621,6 +1621,10 @@
 		letter-spacing: 0.025em;
 	}
 
+	h4 {
+		font-size: .75em;
+	}
+
 	sub {
 		font-size: 0.8em;
 		position: relative;
@@ -1646,6 +1650,19 @@
 	}
 
 /* Section/Article */
+
+	#silvbuy {
+		transition: all 0.3s ease;
+		background-color: #83d3c9;
+		color: white;
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	#silvbuy:hover {
+		transition: all 0.3s ease;
+		background-color: #5d968f;
+	}
 
 	section.special, article.special {
 		text-align: center;
@@ -2093,6 +2110,19 @@
 			font-size: 0.7em;
 			min-width: 14em;
 			padding: 0.5em 0;
+		}
+
+		#errhome {
+			transition: all 0.3s ease;
+			border: 2px black solid; 
+			padding: 0.25em;
+		}
+
+		#errhome:hover {
+			transition: all 0.3s ease;
+			background-color: #83d3c9;
+			color: white;
+			border-color: rgba(0, 0, 0, 0);
 		}
 
 /* Wrapper */
