@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost:3306";
+$servername = "localhost";
 $username = "puresjhh_dbwrite";
 $password = "q8sJk=~bQ6Q4";
 $dbname = "puresjhh_base_info";
@@ -11,18 +11,25 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$email_address = mysqli_real_escape_string($link, $_POST['email']);
-$date = mysqli_real_escape_string($link, $_POST['date']);
+$email_address = mysqli_real_escape_string($conn, $_POST['email']);
+
+if (filter_var($email_address, FILTER_VALIDATE_EMAIL)) {
+  die("Invalid email format");
+}
+
+$date = date("Y-m-d H:i:s");
 
 
 $sql = "INSERT INTO Base (email, date)
 VALUES ('$email_address', '$date')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
-
 $conn->close();
+
+header("Location: https://www.purebredgaming.com/styles/base.html")
+
 ?>
