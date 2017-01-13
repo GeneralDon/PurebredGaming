@@ -1,26 +1,4 @@
-### activate mod_expires
-ExpiresActive On
-## EXPIRES CACHING ##
-<IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType image/jpg "access 1 week"
-ExpiresByType image/jpeg "access 1 week"
-ExpiresByType image/gif "access 1 week"
-ExpiresByType image/png "access 1 week"
-ExpiresByType text/css "access 1 week"
-ExpiresByType text/html "access 1 week"
-ExpiresByType application/pdf "access 1 week"
-ExpiresByType text/x-javascript "access 1 month"
-ExpiresByType application/x-shockwave-flash "access 1 week"
-ExpiresByType image/x-icon "access 1 year"
-ExpiresDefault "access 1 week"
-</IfModule>
-## EXPIRES CACHING ##
-### Apply a Cache-Control header to index.html
-<Files index.html>
-Header append Cache-Control "public, must-revalidate"
-</Files>
-
+#Cache-Control
 # 1 Month for most static assets
 <filesMatch ".(jpg|jpeg|png|gif|pdf|ico)$">
 Header set Cache-Control "max-age=2592000, public"
@@ -29,3 +7,12 @@ Header set Cache-Control "max-age=2592000, public"
 <filesMatch ".(css|js|html|shtml)$">
 Header set Cache-Control "max-age=604800, public"
 </filesMatch>
+
+DirectoryIndex index.html
+
+ErrorDocument 404 /error/404.shtml
+ErrorDocument 502 /error/502.shtml
+ErrorDocument 504 /error/504.shtml
+ErrorDocument 508 /error/508.shtml
+
+Options -Indexes
