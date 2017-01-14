@@ -1673,6 +1673,20 @@
 		background-color: #5d968f;
 	}
 
+	#GalleryPreview img {
+		max-height: 29em;
+	}
+
+	#gallery {
+		margin-top: 2em;
+	}
+
+	#gallery img {
+		height: 80px;
+		margin: 0 10px 10px 0;
+		border: 1px grey solid;
+	}
+
 	section.special, article.special {
 		text-align: center;
 	}
@@ -1830,12 +1844,12 @@
 
 		.image.featured {
 			/*display: block;*/
-			margin: 0 0 2em 0;
+			/*margin: 0 0 2em 0;*/
 		}
 
 			.image.featured img {
 				display: block;
-				width: 100%;
+				/*width: 100%;*/
 			}
 
 /* Icon */
@@ -2771,7 +2785,7 @@
 
 			header.special {
 				margin-bottom: 4em;
-				padding-top: 1.5em;
+				/*padding-top: 1.5em;*/
 			}
 
 				header.special:before, header.special:after {
