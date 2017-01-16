@@ -13,9 +13,9 @@ if ($conn->connect_error) {
 
 $email_address = mysqli_real_escape_string($conn, $_POST['email']);
 
-if (filter_var($email_address, FILTER_VALIDATE_EMAIL)) {
-  die("Invalid email format");
-}
+//if (filter_var($email_address, FILTER_VALIDATE_EMAIL)) {
+//  die("Invalid email format");
+//}
 
 $date = date("Y-m-d H:i:s");
 
