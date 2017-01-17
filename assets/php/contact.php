@@ -119,7 +119,7 @@ if(isset($_POST['email'])) {
       @mail($email_to, $email_subject, $email_message, $headers);  
        
 
-      header("Location: https://www.purebredgaming.com/contact-success.html");
+      header("Location: https://www.purebredgaming.com/form-success.html");
       die();
 
     }
