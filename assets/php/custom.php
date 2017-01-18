@@ -22,7 +22,7 @@ if(isset($_POST['email'])) {
        
           function died($error) {
        
-              header("Location: https://www.purebredgaming.com/form-error.html");
+              header("Location: https://www.purebredgaming.com/form/form-error.html");
        
               die();
        
@@ -38,7 +38,7 @@ if(isset($_POST['email'])) {
        
               !isset($_POST['message'])) {
        
-              header("Location: https://www.purebredgaming.com/form-error.html");
+              header("Location: https://www.purebredgaming.com/form/form-error.html");
 
               die();       
        
@@ -119,13 +119,13 @@ if(isset($_POST['email'])) {
       @mail($email_to, $email_subject, $email_message, $headers);  
        
 
-      header("Location: https://www.purebredgaming.com/form-success.html");
+      header("Location: https://www.purebredgaming.com/form/form-success.html");
       die();
 
     }
 
   } else {
-      header("Location: https://www.purebredgaming.com/form-error.html");
+      header("Location: https://www.purebredgaming.com/form/form-error.html");
     }
 }
  
