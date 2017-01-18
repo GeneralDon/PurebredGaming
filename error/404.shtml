@@ -66,7 +66,8 @@
 			<!-- Main -->
 				<article id="main">
 					<header class="special container">
-						<h2>404 Error! There's nothing here! <a href="../index.html" id="errhome" >Go Home.</a></h2>
+						<h2>404 Error! There's nothing here! </h2>
+						<div><h2><a href="../index.html" id="errhome" >Go Home.</a></h2></div>
 					</header>
 				</article>
 
