@@ -21,8 +21,8 @@ $email_address = mysqli_real_escape_string($conn, $_POST['email']);
 $date = date("Y-m-d");
 
 
-$sql = "INSERT INTO Base (email, name, date)
-VALUES ('$email_address', '$name', $date')";
+$sql = "INSERT INTO DIY (email, name, date)
+VALUES ('$email_address', '$name', '$date')";
 
 if ($conn->query($sql) === TRUE) {
 
