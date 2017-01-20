@@ -22,7 +22,7 @@ $date = date("Y-m-d");
 
 
 $sql = "INSERT INTO Enterprise (email, name, date)
-VALUES ('$email_address', '$name', $date')";
+VALUES ('$email_address', '$name', '$date')";
 
 if ($conn->query($sql) === TRUE) {
 
