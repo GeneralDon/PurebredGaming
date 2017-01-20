@@ -11,17 +11,18 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
+$name = mysqli_real_escape_string($conn, $_POST['name']);
 $email_address = mysqli_real_escape_string($conn, $_POST['email']);
 
 //if (filter_var($email_address, FILTER_VALIDATE_EMAIL)) {
 //  die("Invalid email format");
 //}
 
-$date = date("Y-m-d H:i:s");
+$date = date("Y-m-d");
 
 
-$sql = "INSERT INTO Base (email, date)
-VALUES ('$email_address', '$date')";
+$sql = "INSERT INTO Base (email, name, date)
+VALUES ('$email_address', '$name', $date')";
 
 if ($conn->query($sql) === TRUE) {
 
@@ -30,6 +31,6 @@ if ($conn->query($sql) === TRUE) {
 }
 $conn->close();
 
-header("Location: https://www.purebredgaming.com/styles/base.html")
+header("Location: https://www.purebredgaming.com/form/form-success.html")
 
 ?>
