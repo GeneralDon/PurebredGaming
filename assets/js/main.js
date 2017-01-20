@@ -23,11 +23,11 @@
 			$logoD = $('#logoD');
 
 		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+		//	$body.addClass('is-loading');
 
-			$window.on('load', function() {
-				$body.removeClass('is-loading');
-			});
+		//	$window.on('load', function() {
+		//		$body.removeClass('is-loading');
+		//	});
 
 		// CSS polyfills (IE<9).
 			if (skel.vars.IEVersion < 9)
