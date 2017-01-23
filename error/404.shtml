@@ -24,20 +24,13 @@
 			<meta name="apple-mobile-web-app-capable" content="yes">
 			<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-			<!--<script src="assets/js/jquery.min.js"></script> 
-    <script> 
-    $(function(){
-      $("#includedContent").load("header.html"); 
-    });
-    </script> -->			
-
 </head>
 
 <body class="about">
 	<div id="page-wrapper">
 
 			<!-- Header -->
-			 <!-- #include file="header.html" -->
+			 <!--#include virtual="../includes/header.html" -->
 			<!-- Main -->
 				<article id="main">
 					<header class="special container">
@@ -49,33 +42,19 @@
 
 
 			<!-- Footer -->
-				<footer id="footer">
-
-					<ul class="icons">
-						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
-					</ul>
-
-					<ul class="copyright">
-						<li>Purebred Gaming &amp; Technology LLC</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-				</footer>
+				<!--#include virtual="../includes/footer.html" -->
 
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollgress.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>
