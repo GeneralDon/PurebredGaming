@@ -16,3 +16,11 @@ ErrorDocument 504 /error/504.shtml
 ErrorDocument 508 /error/508.shtml
 
 Options -Indexes
+
+Options +Includes
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+AddHandler server-parsed .shtml
+AddOutputFilter INCLUDES .html
+AddHandler server-parsed .html
+Options Indexes FollowSymLinks Includes
