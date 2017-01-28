@@ -2057,6 +2057,11 @@
 				padding: 0;
 			}
 
+	.footbuttons li {
+		display: inline-block;
+
+	}
+
 /* Table */
 
 	table {
